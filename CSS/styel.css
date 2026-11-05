@@ -11,7 +11,7 @@ small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
+caption,  
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
@@ -45,24 +45,22 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-
 }
 .main-title{
     font-size: 60px;
-    font-wight: 500px;
-    margin-left:80px;
+    text-align: center;
+    color: black;
     transition: 1s;
 }
 .second-title{
     opacity: 0;
     color: crimson;
     transition: 1s;
-}
+    }
 .main-title:hover{
     font-size: 70px;
     color: crimson;
 }
-
 .main-title:hover .second-title{
     opacity: 1;
 }
@@ -76,35 +74,150 @@ table {
     align-items: center;
     flex-wrap: wrap;
 }
-
-.nav-links {
+.nav-links{
     display: flex;
     gap: 25px;
     flex-wrap: wrap;
 }
-
-.nav-links li a{
+.nav-links li a {
     color: white;
     text-decoration: none;
-    font-slize: 20px;
-
+    font-size: 20px;
+    transition: 0.5s;
+}
+.navbar ul li .selected {
+    font-weight: bold;
+    border-left: 3px solid white;
+    padding-left: 10px;
 }
 
-.nav-links li a :hover{
-    color: blue;
+}
+.nav-links li a:hover {
+    color: rgb(14, 14, 107);
+    background-color: rgb(20, 18, 18);
+    padding: 4px 10px;
+    border-radius: 4px;
 }
 .buying {
-    background-color: rgb(47, 47, 252);
-    color: white;
+    background-color: rgb(14, 14, 107);
+    color: rgb(245, 243, 243);
     height: 40px;
     display: inline-block;
     line-height: 36px;
     text-decoration: none;
-    padding: 3px 9px;
+    padding: 0px 8px;
     border-radius: 8px;
-    transition: 0,5s;
+    transition: 0.5s;
 }
-.buying.hover {
-    background-color: transparent;
-    border: 3px solid rgb(12, 12, 247);
+.buying:hover {
+    background-color:transparent;
+    border: 3px solid rgb(14, 14, 107);
+}
+.hero {
+    background-image: url(../img/spiderman1.jpg);
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 10%;
+    border-bottom: 5px solid rgb(241, 239, 239);
+}
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 20px;
+}
+.info p span{
+    color: crimson;
+    font-weight: bold;
+}
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+.section1 {
+    flex: 1;
+}
+
+.section1 p {
+    text-align: justify;
+}
+.quoat {
+   background-color: crimson;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+.quoat:hover {
+    background-color:white;
+    color: rgb(235, 233, 233);
+    font-size: 40px;
+    transition: 1s;
+}
+.hero2 {
+    background-image:url(../img/spider\ man2.jpg);
+    flex: 1;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    border: 5px solid black;
+    border-radius: 12px;
+}
+.hero2:hover {
+    background-image: url(../img/spiderman3.jpg);
+    transition: 1s;
+    position: 10%;
+}
+/* Memastikan teks judul berada di tengah */
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+/* Mengatur susunan kotak agar berjejer ke samping */
+.button-group {
+    display: flex;
+    gap: 20px; /* Jarak antar kotak */
+    justify-content: center;
+}
+
+/* Desain kotak hitam dengan teks putih */
+.box {
+    background-color: #000000; /* Warna latar belaka */
+    color: #ffffff; /* Warna teks putih */
+    padding: 15px 30px; /* Jarak ruang di dalam kotal */
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 4px; /* Sudut kotak sedikit melen */
+    min-width: 120px;
+}
+.box:hover {
+background-color: transparent;
+border:3px solid black;
+color:black;
+}
+footer {
+    background-color:#000000;
+    min-height: 100px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+footer p {
+    color: white;
+    font-size: 20px;
+    latter-spacing: 1px;
+}
+.LKP-indo-jaya {
+    color: crimson;
+    font-weight: bold;
 }
